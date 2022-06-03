@@ -293,5 +293,40 @@
 // Preloader end here\\
 
 
-// single page projects 
+// music toggle
+//   var music = document.getElementById("music");
+//       var isPlaying;
+//          music.volume = 0.1;
+//   function togglePlay() {
+//       if (isPlaying) {
+//         music.pause()
+//     } else {
+//       music.play();
+//    }
+//  };
+//    music.onplaying = function() {
+//      isPlaying = true;
+//        document.getElementById("toggle").classList.add('on')
+//    };
+//      music.onpause = function() {
+//           isPlaying = false;
+//              document.getElementById("toggle").classList.remove('on')
+//      };
 
+//       var button = document.getElementById("toggle");
+//           button.addEventListener('power', function() {
+//      if (button.getElementByType("checkbox") == button.innerHTML) {
+//         button.innerHTML = button.getElementByType("checkbox");
+//     } else {
+//       button.getElementById("checkbox", button.innerHTML);
+//        button.innerHTML = button.getElementByType("checkbox");
+//    }
+//   }, false);
+var myMusic= document.getElementById("music");
+function play() {
+myMusic.play();
+}
+
+function pause() {
+myMusic.pause();
+}
